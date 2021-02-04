@@ -2,6 +2,7 @@
 //#include "libft.a"
 #include "cub3d.h"
 # include "mlx_mms/mlx.h"
+//# include "minilibx_opengl_20191021/mlx.h"
 //#	include "libft/libft.h"
 #	include "cub3d.h"
 #	include <stdlib.h>
@@ -18,35 +19,120 @@
 ////#include <tclDecls.h>
 //
 
-typedef struct  s_vars {
-	void    *mlx;
-	void    *win;
-}               t_vars;
 
 
-int             ft_action(int key, t_vars *vars)
+int             ft_exit(int key, t_vars *vars)
+{
+	(void)key;
+	(void)vars;
+	exit(0);
+}
+
+
+//	int length;
+//	int width;
+//
+//
+//	int n = 20;
+//
+//	length = 0;
+//	width = 0;
+//	while (length < n)
+//	{
+//		while (width < n)
+//		{
+//			mlx_pixel_put(prm->vars.mlx, prm->vars.win, 40 + length, 40 + width, 0xFFFFFF);
+//			mlx_pixel_put(prm->vars.mlx, prm->vars.win, 40 + width, 40 + length, 0x00FF00);
+//			mlx_pixel_put(prm->vars.mlx, prm->vars.win,  40 + n - length , 40 + n- width, 0xFFFFFF);
+//			mlx_pixel_put(prm->vars.mlx, prm->vars.win, 40 + n- width, 40 + n - length, 0x00FF00);
+//			width++;
+//		}
+//		length++;
+//	}
+
+int ft_basic_frame(t_params *prm)
+{
+//	mlx_string_put (prm->vars.mlx, prm->vars.win, 55, 55, 0xFFFFFF,"THIS");
+//
+	int width;
+	int length;
+
+	prm->c.r = 255;
+	prm->c.g = 255;
+	prm->c.b = 255;
+
+	int c =  prm->c.b <<  16 | prm->c.r << 8| prm->c.g ;
+	int f =  prm->f.b <<  16 | prm->f.r << 8| prm->f.g ;
+
+	width = 0;
+	while(width < prm->r.x + 0)
+	{
+//		mlx_string_put (prm->vars.mlx, prm->vars.win, 55, 55, 0xFFFFFF,".");
+		length = 0;
+		while(length < prm->r.y)
+		{
+			if (length < prm->r.y/2)
+				mlx_pixel_put(prm->vars.mlx, prm->vars.win, 0 + width, 0+length, c);
+			else
+				mlx_pixel_put(prm->vars.mlx, prm->vars.win, 0 + width, 0+length, f);
+//			mlx_string_put (prm->vars.mlx, prm->vars.win, 66, 66, 0xFFFFFF,".");
+			length++;
+		}
+		width++;
+	}
+	return 0;
+}
+
+
+
+
+int             ft_action(int key, t_params *prm)
 {
 	//mlx_destroy_window(vars->mlx, vars->win);
 	printf("key-%d\n", key);
-	if (key == 12)
+
+ 	ft_basic_frame(prm);
+
+	if (key == 13) //W
 	{
-		mlx_destroy_window(vars->mlx, vars->win);
+		//mlx_pixel_put(prm->vars.mlx, prm->vars.win, 50, 50, 0xFFFFFF);
+		mlx_string_put (prm->vars.mlx, prm->vars.win, 50, 50, 0xFFFFFF,"string");
 	}
-	if (key == 1)
+	if (key == 0) // A
 	{
-		mlx_pixel_put(vars->mlx, vars->win, 50, 50, 0xFFFFFF);
+		mlx_pixel_put(prm->vars.mlx, prm->vars.win, 50, 50, 0xFFFFFF);
 	}
-	if (key == 8)
+	if (key == 1) // S
 	{
-		mlx_clear_window(vars->mlx, vars->win);
+		mlx_clear_window(prm->vars.mlx, prm->vars.win);
 	}
+	if (key == 2) // D
+	{
+		mlx_clear_window(prm->vars.mlx, prm->vars.win);
+	}
+	if (key == 124) // left
+	{
+		mlx_clear_window(prm->vars.mlx, prm->vars.win);
+	}
+	if (key == 123) // right
+	{
+		mlx_clear_window(prm->vars.mlx, prm->vars.win);
+	}
+
+	if (key == 53)
+	{
+		mlx_destroy_window(prm->vars.mlx, prm->vars.win);
+		ft_exit(53,&prm->vars);
+		//exit(0);
+	}
+	return 0;
+}
 
 //	if (key == 0)
 //		mlx_pixel_put(vars->mlx, vars->win, 50,50, 0xFFFFFF);
 //	if (key == 1)
 //		mlx_destroy_window(vars->mlx, vars->win);
-	return(0);
-}
+//
 //
 //[ cos(a) -sin(a) ]
 //[ sin(a)  cos(a) ]
@@ -58,72 +144,72 @@ int             ft_action(int key, t_vars *vars)
 //		mlx_pixel_put(vars->mlx_ptr, vars->win_ptr, 25,50, 0xFFFFFF);
 //		return (0);
 //}
-int     render_next_frame(void *YourStruct);
+
+int     render_next_frame(t_params *prm)
+{
+	ft_basic_frame(prm);
+
+	return 0;
+}
 
 int             main(void)
 {
-	t_vars vars;
+	//t_vars vars;
 
-	vars.mlx = mlx_init();
-	vars.win = mlx_new_window(vars.mlx, 100, 100, "Hello world!");
-	//mlx_hook(vars.win, 2, 1L << 0, ft_close, &vars);
-	//mlx_pixel_put(vars.mlx, vars.win, 50,50, 0xFFFFFF);
+	int fd = 0;
+	t_params *prm = NULL;
 
-	int length;
-	int width;
+	int sizex;
+  	int sizey;
 
-
-	int n = 20;
-
-	length = 0;
-	width = 0;
-	while (length < n)
-	{
-		while (width < n)
-		{
-			mlx_pixel_put(vars.mlx, vars.win, 40 + length, 40 + width, 0xFFFFFF);
-			mlx_pixel_put(vars.mlx, vars.win, 40 + width, 40 + length, 0x00FF00);
-			mlx_pixel_put(vars.mlx, vars.win,  40 + n - length , 40 + n- width, 0xFFFFFF);
-			mlx_pixel_put(vars.mlx, vars.win, 40 + n- width, 40 + n- length, 0x00FF00);
-			width++;
-			}
-		length++;
-	}
-
-	mlx_hook(vars.win, 2, 1L << 0, ft_action, &vars);
-	//mlx_hook(mlx, 2, 0, &func, param);
-	//mlx_loop_hook(mlx, render_next_frame, YourStruct);
-	mlx_loop(vars.mlx);
-}
-
-//int main(void)
-//{
-//	void *mlx_ptr;
-//	void *win_ptr;
-//
-//	t_params *prm;
-//	int fd;
-//
-//	int sizex;
-//	int sizey;
-//
-//
-//
 ////	if ((fd = open("/Users/lesia/Study/21_school/cum3d/params.cub", O_RDONLY)) < 0)
 ////		return -1;
-//	prm = ft_parcer(prm, fd);
-//	printf("%d - %d \n", prm->r.x, prm->r.y);
-//	mlx_ptr = mlx_init();
-//	win_ptr = mlx_new_window(mlx_ptr,  prm->r.x,prm->r.y, "test");
-//	mlx_pixel_put(mlx_ptr, win_ptr, 50,50, 0xFFFFFF);
+	prm = ft_parcer(prm, fd);
+	prm->vars.mlx = mlx_init();
+//	mlx_get_screen_size(prm->vars.mlx, &sizex, &sizey);
+	printf("%d,%d",prm->r.x ,prm->r.y);
 //
-//	mlx_key_hook(win_ptr, deal_key, mlx_ptr);
+//	if (prm->r.x > sizex)
+//		prm->r.x = sizex;
+//	if (prm->r.y > sizey)
+//		prm->r.y = sizey;
+	prm->vars.win = mlx_new_window(prm->vars.mlx, prm->r.x ,prm->r.y, "Cub3d");
+	mlx_hook(prm->vars.win, 2, 1L << 0, ft_action, prm);
+	mlx_hook(prm->vars.win, 17, 0, ft_exit, prm);
+//	mlx_hook(prm->vars.win, 3, 1L<<1, ft_basic_frame, 0);
+
+	mlx_loop_hook(prm->vars.win, render_next_frame, prm);
+
+	mlx_loop(prm->vars.mlx);
+
+
+
 //
-//	mlx_loop(mlx_ptr);
 //
-////	printf("Hello, World!\n");
-//	return 0;
-//}
+//	int length;
+//	int width;
+//
+//
+//	int n = 20;
+//
+//	length = 0;
+//	width = 0;
+//	while (length < n)
+//	{
+//		while (width < n)
+//		{
+//			mlx_pixel_put(vars.mlx, vars.win, 40 + length, 40 + width, 0xFFFFFF);
+//			mlx_pixel_put(vars.mlx, vars.win, 40 + width, 40 + length, 0x00FF00);
+//			mlx_pixel_put(vars.mlx, vars.win,  40 + n - length , 40 + n- width, 0xFFFFFF);
+//			mlx_pixel_put(vars.mlx, vars.win, 40 + n- width, 40 + n - length, 0x00FF00);
+//			width++;
+//		}
+//		length++;
+//	}
+	//mlx_hook(mlx, 17, 0, &func, param);
+
+}
+
 
 
 //gcc main.c parcer.c libft.a ./mlx_mms/libmlx.dylib  -framework OpenGL -framework AppKit

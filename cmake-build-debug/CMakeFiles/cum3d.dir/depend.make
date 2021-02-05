@@ -39,8 +39,18 @@ CMakeFiles/cum3d.dir/main.c.o: ../libft/libft.h
 CMakeFiles/cum3d.dir/main.c.o: ../main.c
 CMakeFiles/cum3d.dir/main.c.o: ../mlx_mms/mlx.h
 
-CMakeFiles/cum3d.dir/parcer.c.o: ../cub3d.h
-CMakeFiles/cum3d.dir/parcer.c.o: ../libft/libft.h
-CMakeFiles/cum3d.dir/parcer.c.o: ../mlx_mms/mlx.h
-CMakeFiles/cum3d.dir/parcer.c.o: ../parcer.c
+CMakeFiles/cum3d.dir/map.c.o: ../cub3d.h
+CMakeFiles/cum3d.dir/map.c.o: ../libft/libft.h
+CMakeFiles/cum3d.dir/map.c.o: ../map.c
+CMakeFiles/cum3d.dir/map.c.o: ../mlx_mms/mlx.h
+
+CMakeFiles/cum3d.dir/params.c.o: ../cub3d.h
+CMakeFiles/cum3d.dir/params.c.o: ../libft/libft.h
+CMakeFiles/cum3d.dir/params.c.o: ../mlx_mms/mlx.h
+CMakeFiles/cum3d.dir/params.c.o: ../params.c
+
+CMakeFiles/cum3d.dir/ray.c.o: ../cub3d.h
+CMakeFiles/cum3d.dir/ray.c.o: ../libft/libft.h
+CMakeFiles/cum3d.dir/ray.c.o: ../mlx_mms/mlx.h
+CMakeFiles/cum3d.dir/ray.c.o: ../ray.c
 

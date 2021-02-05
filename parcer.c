@@ -6,7 +6,7 @@
 /*   By: sbrenton <sbrenton@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/20 15:23:48 by sbrenton          #+#    #+#             */
-/*   Updated: 2021/02/04 17:12:48 by sbrenton         ###   ########.fr       */
+/*   Updated: 2021/02/05 13:08:10 by sbrenton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -400,8 +400,9 @@ t_params *ft_parcer(t_params *prm, int fd)
 	prm->map = ft_map(list_map);
 	if (prm->map.self == NULL)
 		return NULL;
-	prm->player= ft_player(prm->map);
+	prm->player= ft_player(&(prm->map));
 	if (prm->player.r == -1)
 		return NULL;
+	prm->p_cam = ft_camera_params(prm->player.view);
 	return prm;
 }

@@ -11,7 +11,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/cum3d.dir/libft/ft_strtrim.c.o"
   "CMakeFiles/cum3d.dir/libft/get_next_line.c.o"
   "CMakeFiles/cum3d.dir/main.c.o"
-  "CMakeFiles/cum3d.dir/parcer.c.o"
+  "CMakeFiles/cum3d.dir/map.c.o"
+  "CMakeFiles/cum3d.dir/params.c.o"
+  "CMakeFiles/cum3d.dir/ray.c.o"
   "cum3d"
   "cum3d.pdb"
 )

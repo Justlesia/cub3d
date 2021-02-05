@@ -20,6 +20,7 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -framework OpenGL -framework AppKit -L. -lml
 add_executable(cum3d main.c
         params.c
         map.c
+        ray.c
         libft/ft_lstsize.c
         libft/ft_strtrim.c
         libft/ft_strdup.c

@@ -19,8 +19,6 @@
 ////#include <tclDecls.h>
 //
 
-
-
 int             ft_exit(int key, t_vars *vars)
 {
 	(void)key;
@@ -50,41 +48,6 @@ int             ft_exit(int key, t_vars *vars)
 //		length++;
 //	}
 
-int ft_basic_frame(t_params *prm)
-{
-//	mlx_string_put (prm->vars.mlx, prm->vars.win, 55, 55, 0xFFFFFF,"THIS");
-//
-	int width;
-	int length;
-
-	prm->c.r = 255;
-	prm->c.g = 255;
-	prm->c.b = 255;
-
-	int c =  prm->c.b <<  16 | prm->c.r << 8| prm->c.g ;
-	int f =  prm->f.b <<  16 | prm->f.r << 8| prm->f.g ;
-
-	width = 0;
-	while(width < prm->r.x + 0)
-	{
-//		mlx_string_put (prm->vars.mlx, prm->vars.win, 55, 55, 0xFFFFFF,".");
-		length = 0;
-		while(length < prm->r.y)
-		{
-			if (length < prm->r.y/2)
-				mlx_pixel_put(prm->vars.mlx, prm->vars.win, 0 + width, 0+length, c);
-			else
-				mlx_pixel_put(prm->vars.mlx, prm->vars.win, 0 + width, 0+length, f);
-//			mlx_string_put (prm->vars.mlx, prm->vars.win, 66, 66, 0xFFFFFF,".");
-			length++;
-		}
-		width++;
-	}
-	return 0;
-}
-
-
-
 
 int             ft_action(int key, t_params *prm)
 {
@@ -92,39 +55,59 @@ int             ft_action(int key, t_params *prm)
 	printf("key-%d\n", key);
 
  	ft_basic_frame(prm);
+	double moveSpeed = 0.02;
 
-	if (key == 13) //W
+ 	if (key == 13) //W
 	{
-		//mlx_pixel_put(prm->vars.mlx, prm->vars.win, 50, 50, 0xFFFFFF);
-		mlx_string_put (prm->vars.mlx, prm->vars.win, 50, 50, 0xFFFFFF,"string");
-	}
-	if (key == 0) // A
-	{
-		mlx_pixel_put(prm->vars.mlx, prm->vars.win, 50, 50, 0xFFFFFF);
+		if(prm->map.self[(int)(prm->player.c + prm->p_cam.dirX * moveSpeed)][(int)(prm->player.r)] == '0')
+			prm->player.c += prm->p_cam.dirX * moveSpeed;
 	}
 	if (key == 1) // S
 	{
-		mlx_clear_window(prm->vars.mlx, prm->vars.win);
+		if(prm->map.self[(int)(prm->player.c - prm->p_cam.dirX * moveSpeed)][(int)(prm->player.r)] == '0')
+			prm->player.c -= prm->p_cam.dirX * moveSpeed;
+	}
+	if (key == 0) // A
+	{
+		if(prm->map.self[(int)(prm->player.c)][(int)(prm->player.r + prm->p_cam.dirY * moveSpeed)] == '0')
+			prm->player.r += prm->p_cam.dirY * moveSpeed;
 	}
 	if (key == 2) // D
 	{
-		mlx_clear_window(prm->vars.mlx, prm->vars.win);
+		if(prm->map.self[(int)(prm->player.c)][(int)(prm->player.r - prm->p_cam.dirY * moveSpeed)] == '0')
+			prm->player.r -= prm->p_cam.dirY * moveSpeed;
+	}
+	double oldDirX;
+	double oldPlaneX;
+	double rotSpeed = 0.001;
+
+	if (key == 123) // right
+	{
+		oldDirX = prm->p_cam.dirX;
+		prm->p_cam.dirX = prm->p_cam.dirX * cos(-rotSpeed) - prm->p_cam.dirY * sin(-rotSpeed);
+		prm->p_cam.dirY = oldDirX * sin(-rotSpeed) + prm->p_cam.dirY * cos(-rotSpeed);
+		oldPlaneX = prm->p_cam.planeX;
+		prm->p_cam.planeX = prm->p_cam.planeX * cos(-rotSpeed) - prm->p_cam.planeY * sin(-rotSpeed);
+		prm->p_cam.planeY = oldPlaneX * sin(-rotSpeed) + prm->p_cam.planeY * cos(-rotSpeed);
 	}
 	if (key == 124) // left
 	{
-		mlx_clear_window(prm->vars.mlx, prm->vars.win);
+		oldDirX = prm->p_cam.dirX;
+		prm->p_cam.dirX = prm->p_cam.dirX * cos(rotSpeed) - prm->p_cam.dirY * sin(rotSpeed);
+		prm->p_cam.dirY = oldDirX * sin(rotSpeed) + prm->p_cam.dirY * cos(rotSpeed);
+		oldPlaneX = prm->p_cam.planeX;
+		prm->p_cam.planeX = prm->p_cam.planeX * cos(rotSpeed) - prm->p_cam.planeY * sin(rotSpeed);
+		prm->p_cam.planeY = oldPlaneX * sin(rotSpeed) + prm->p_cam.planeY * cos(rotSpeed);
 	}
-	if (key == 123) // right
-	{
-		mlx_clear_window(prm->vars.mlx, prm->vars.win);
-	}
-
 	if (key == 53)
 	{
 		mlx_destroy_window(prm->vars.mlx, prm->vars.win);
 		ft_exit(53,&prm->vars);
 		//exit(0);
 	}
+
+	ft_walls(prm);
+
 	return 0;
 }
 
@@ -174,12 +157,13 @@ int             main(void)
 //	if (prm->r.y > sizey)
 //		prm->r.y = sizey;
 	prm->vars.win = mlx_new_window(prm->vars.mlx, prm->r.x ,prm->r.y, "Cub3d");
+	ft_basic_frame(prm);
+	ft_walls(prm);
 	mlx_hook(prm->vars.win, 2, 1L << 0, ft_action, prm);
 	mlx_hook(prm->vars.win, 17, 0, ft_exit, prm);
 //	mlx_hook(prm->vars.win, 3, 1L<<1, ft_basic_frame, 0);
 
 	mlx_loop_hook(prm->vars.win, render_next_frame, prm);
-
 	mlx_loop(prm->vars.mlx);
 
 

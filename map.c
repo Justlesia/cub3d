@@ -6,7 +6,7 @@
 /*   By: sbrenton <sbrenton@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/20 15:23:48 by sbrenton          #+#    #+#             */
-/*   Updated: 2021/02/04 19:09:06 by sbrenton         ###   ########.fr       */
+/*   Updated: 2021/02/05 13:08:10 by sbrenton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,7 @@
 #	include <fcntl.h>
 # 	include "mlx_mms/mlx.h"
 
-
-
-t_plr ft_player(t_map map)
+t_plr ft_player(t_map *map)
 {
 	int r;
 	int c;
@@ -28,16 +26,17 @@ t_plr ft_player(t_map map)
 
 	r = 0;
 	count = 0;
-	while(r < map.r)
+	while(r < map->r)
 	{
 		c = 0;
-		while(c < map.c[r])
+		while(c < map->c[r])
 		{
-			if (ft_is_in_set("NSEW",map.self[r][c]) == 1)
+			if (ft_is_in_set("NSEW",map->self[r][c]) == 1)
 			{
 				player.r = r;
 				player.c = c;
-				player.view = map.self[r][c];
+				player.view = map->self[r][c];
+				map->self[r][c] = '0';
 				count = count + 1;
 				if (count == 2)
 				{
@@ -68,10 +67,10 @@ char **ft_check_map(char **map, int n_rows, int n_icol[n_rows + 1])
 		c = 0;
 		while(c < n_icol[r])
 		{
-			if (ft_is_in_set("NSEW",map[r][c]) == 1)
-			{
-				map[r][c] = 0;
-			}
+//			if (ft_is_in_set("NSEW",map[r][c]) == 1)
+//			{
+//				map[r][c] = '0';
+//			}
 			if (ft_is_in_set("1 ",map[r][c]) == 0
 				&& (r == 0 || r == n_rows-1 || c == 0 || c == n_icol[r]-1))
 				return NULL;

@@ -6,7 +6,7 @@
 /*   By: sbrenton <sbrenton@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/20 15:56:39 by sbrenton          #+#    #+#             */
-/*   Updated: 2021/02/04 19:11:53 by sbrenton         ###   ########.fr       */
+/*   Updated: 2021/02/05 19:07:58 by sbrenton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 #	include <stdio.h>
 #	include <zconf.h>
 #include "libft/libft.h"
+# include <math.h>
 
 struct		s_resolution
 {
@@ -47,8 +48,8 @@ typedef struct s_pics t_pics;
 
 struct		s_plr
 {
-	int					r;
-	int					c;
+	double					r;
+	double					c;
 	char				view;
 };
 typedef struct s_plr t_plr;
@@ -68,6 +69,13 @@ typedef struct  s_vars {
 	void    *win;
 }               t_vars;
 
+typedef struct  s_cam_params {
+	double    dirX;
+	double    dirY;
+	double    planeX;
+	double    planeY;
+}               t_cam_params;
+
 struct		s_params
 {
 	t_resolution			r;
@@ -77,14 +85,21 @@ struct		s_params
 	t_map					map;
 	t_plr					player;
 	t_vars 					vars;
+	t_cam_params 			p_cam;
 };
 typedef struct s_params	t_params;
 
 
 
+
+
+
 t_params *ft_parcer(t_params *prm, int fd);
 t_map ft_map(t_list *list_map);
-t_plr ft_player(t_map map);
+t_plr ft_player(t_map *map);
 int ft_is_in_set(const char *set, char c);
+int ft_basic_frame(t_params *prm);
+t_cam_params ft_camera_params(char position, t_cam_params p_cam);
+int ft_walls(t_params *prm);
 
 #endif

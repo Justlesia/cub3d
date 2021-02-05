@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Applications/CLion 2.app/Contents/bin/cmake/mac/bin/cmake"
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = "/Applications/CLion 2.app/Contents/bin/cmake/mac/bin/cmake" -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lesia/Study/21_school/cum3d
+CMAKE_SOURCE_DIR = /Users/sbrenton/Documents/Study/cub_school
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lesia/Study/21_school/cum3d/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/sbrenton/Documents/Study/cub_school/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /Users/lesia/Study/21_school/cum3d/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/Applications/CLion 2.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"/Applications/CLion 2.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lesia/Study/21_school/cum3d/cmake-build-debug/CMakeFiles /Users/lesia/Study/21_school/cum3d/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles /Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lesia/Study/21_school/cum3d/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -467,32 +467,86 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/main.c.s
 .PHONY : main.c.s
 
-parcer.o: parcer.c.o
+map.o: map.c.o
 
-.PHONY : parcer.o
+.PHONY : map.o
 
 # target to build an object file
-parcer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/parcer.c.o
-.PHONY : parcer.c.o
+map.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/map.c.o
+.PHONY : map.c.o
 
-parcer.i: parcer.c.i
+map.i: map.c.i
 
-.PHONY : parcer.i
+.PHONY : map.i
 
 # target to preprocess a source file
-parcer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/parcer.c.i
-.PHONY : parcer.c.i
+map.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/map.c.i
+.PHONY : map.c.i
 
-parcer.s: parcer.c.s
+map.s: map.c.s
 
-.PHONY : parcer.s
+.PHONY : map.s
 
 # target to generate assembly for a file
-parcer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/parcer.c.s
-.PHONY : parcer.c.s
+map.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/map.c.s
+.PHONY : map.c.s
+
+params.o: params.c.o
+
+.PHONY : params.o
+
+# target to build an object file
+params.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/params.c.o
+.PHONY : params.c.o
+
+params.i: params.c.i
+
+.PHONY : params.i
+
+# target to preprocess a source file
+params.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/params.c.i
+.PHONY : params.c.i
+
+params.s: params.c.s
+
+.PHONY : params.s
+
+# target to generate assembly for a file
+params.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/params.c.s
+.PHONY : params.c.s
+
+ray.o: ray.c.o
+
+.PHONY : ray.o
+
+# target to build an object file
+ray.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/ray.c.o
+.PHONY : ray.c.o
+
+ray.i: ray.c.i
+
+.PHONY : ray.i
+
+# target to preprocess a source file
+ray.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/ray.c.i
+.PHONY : ray.c.i
+
+ray.s: ray.c.s
+
+.PHONY : ray.s
+
+# target to generate assembly for a file
+ray.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/ray.c.s
+.PHONY : ray.c.s
 
 # Help Target
 help:
@@ -539,9 +593,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... parcer.o"
-	@echo "... parcer.i"
-	@echo "... parcer.s"
+	@echo "... map.o"
+	@echo "... map.i"
+	@echo "... map.s"
+	@echo "... params.o"
+	@echo "... params.i"
+	@echo "... params.s"
+	@echo "... ray.o"
+	@echo "... ray.i"
+	@echo "... ray.s"
 .PHONY : help
 
 

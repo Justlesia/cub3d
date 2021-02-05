@@ -4,19 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/lesia/Study/21_school/cum3d/libft/ft_atoi.c" "/Users/lesia/Study/21_school/cum3d/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_atoi.c.o"
-  "/Users/lesia/Study/21_school/cum3d/libft/ft_bzero.c" "/Users/lesia/Study/21_school/cum3d/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_bzero.c.o"
-  "/Users/lesia/Study/21_school/cum3d/libft/ft_calloc.c" "/Users/lesia/Study/21_school/cum3d/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_calloc.c.o"
-  "/Users/lesia/Study/21_school/cum3d/libft/ft_itoa.c" "/Users/lesia/Study/21_school/cum3d/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_itoa.c.o"
-  "/Users/lesia/Study/21_school/cum3d/libft/ft_lstadd_back.c" "/Users/lesia/Study/21_school/cum3d/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_lstadd_back.c.o"
-  "/Users/lesia/Study/21_school/cum3d/libft/ft_lstnew.c" "/Users/lesia/Study/21_school/cum3d/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_lstnew.c.o"
-  "/Users/lesia/Study/21_school/cum3d/libft/ft_lstsize.c" "/Users/lesia/Study/21_school/cum3d/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_lstsize.c.o"
-  "/Users/lesia/Study/21_school/cum3d/libft/ft_strdup.c" "/Users/lesia/Study/21_school/cum3d/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_strdup.c.o"
-  "/Users/lesia/Study/21_school/cum3d/libft/ft_strlen.c" "/Users/lesia/Study/21_school/cum3d/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_strlen.c.o"
-  "/Users/lesia/Study/21_school/cum3d/libft/ft_strtrim.c" "/Users/lesia/Study/21_school/cum3d/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_strtrim.c.o"
-  "/Users/lesia/Study/21_school/cum3d/libft/get_next_line.c" "/Users/lesia/Study/21_school/cum3d/cmake-build-debug/CMakeFiles/cum3d.dir/libft/get_next_line.c.o"
-  "/Users/lesia/Study/21_school/cum3d/main.c" "/Users/lesia/Study/21_school/cum3d/cmake-build-debug/CMakeFiles/cum3d.dir/main.c.o"
-  "/Users/lesia/Study/21_school/cum3d/parcer.c" "/Users/lesia/Study/21_school/cum3d/cmake-build-debug/CMakeFiles/cum3d.dir/parcer.c.o"
+  "/Users/sbrenton/Documents/Study/cub_school/libft/ft_atoi.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_atoi.c.o"
+  "/Users/sbrenton/Documents/Study/cub_school/libft/ft_bzero.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_bzero.c.o"
+  "/Users/sbrenton/Documents/Study/cub_school/libft/ft_calloc.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_calloc.c.o"
+  "/Users/sbrenton/Documents/Study/cub_school/libft/ft_itoa.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_itoa.c.o"
+  "/Users/sbrenton/Documents/Study/cub_school/libft/ft_lstadd_back.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_lstadd_back.c.o"
+  "/Users/sbrenton/Documents/Study/cub_school/libft/ft_lstnew.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_lstnew.c.o"
+  "/Users/sbrenton/Documents/Study/cub_school/libft/ft_lstsize.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_lstsize.c.o"
+  "/Users/sbrenton/Documents/Study/cub_school/libft/ft_strdup.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_strdup.c.o"
+  "/Users/sbrenton/Documents/Study/cub_school/libft/ft_strlen.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_strlen.c.o"
+  "/Users/sbrenton/Documents/Study/cub_school/libft/ft_strtrim.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_strtrim.c.o"
+  "/Users/sbrenton/Documents/Study/cub_school/libft/get_next_line.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/libft/get_next_line.c.o"
+  "/Users/sbrenton/Documents/Study/cub_school/main.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/main.c.o"
+  "/Users/sbrenton/Documents/Study/cub_school/map.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/map.c.o"
+  "/Users/sbrenton/Documents/Study/cub_school/params.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/params.c.o"
+  "/Users/sbrenton/Documents/Study/cub_school/ray.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/ray.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

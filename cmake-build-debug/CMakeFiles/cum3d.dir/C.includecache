@@ -32,7 +32,7 @@ zconf.h
 
 /Users/sbrenton/Documents/Study/cub_school/mlx_mms/mlx.h
 
-/Users/sbrenton/Documents/Study/cub_school/ray.c
+/Users/sbrenton/Documents/Study/cub_school/parser_map.c
 libft/libft.h
 /Users/sbrenton/Documents/Study/cub_school/libft/libft.h
 cub3d.h
@@ -45,6 +45,4 @@ fcntl.h
 -
 mlx_mms/mlx.h
 /Users/sbrenton/Documents/Study/cub_school/mlx_mms/mlx.h
-math.h
--
 

@@ -6,7 +6,7 @@
 /*   By: sbrenton <sbrenton@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/20 15:56:39 by sbrenton          #+#    #+#             */
-/*   Updated: 2021/02/05 19:07:58 by sbrenton         ###   ########.fr       */
+/*   Updated: 2021/02/10 16:32:22 by sbrenton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,10 +88,6 @@ struct		s_params
 	t_cam_params 			p_cam;
 };
 typedef struct s_params	t_params;
-
-
-
-
 
 
 t_params *ft_parcer(t_params *prm, int fd);

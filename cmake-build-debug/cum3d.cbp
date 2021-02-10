@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/sbrenton/Documents/Study/cub_school/functions.c">
+			<Option target="cum3d"/>
+		</Unit>
 		<Unit filename="/Users/sbrenton/Documents/Study/cub_school/libft/ft_atoi.c">
 			<Option target="cum3d"/>
 		</Unit>
@@ -114,10 +117,10 @@
 		<Unit filename="/Users/sbrenton/Documents/Study/cub_school/main.c">
 			<Option target="cum3d"/>
 		</Unit>
-		<Unit filename="/Users/sbrenton/Documents/Study/cub_school/map.c">
+		<Unit filename="/Users/sbrenton/Documents/Study/cub_school/parser_map.c">
 			<Option target="cum3d"/>
 		</Unit>
-		<Unit filename="/Users/sbrenton/Documents/Study/cub_school/params.c">
+		<Unit filename="/Users/sbrenton/Documents/Study/cub_school/parser_params.c">
 			<Option target="cum3d"/>
 		</Unit>
 		<Unit filename="/Users/sbrenton/Documents/Study/cub_school/ray.c">

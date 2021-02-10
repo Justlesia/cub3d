@@ -90,35 +90,48 @@ CMakeFiles/cum3d.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cum3d.dir/main.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sbrenton/Documents/Study/cub_school/main.c -o CMakeFiles/cum3d.dir/main.c.s
 
-CMakeFiles/cum3d.dir/params.c.o: CMakeFiles/cum3d.dir/flags.make
-CMakeFiles/cum3d.dir/params.c.o: ../params.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cum3d.dir/params.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cum3d.dir/params.c.o   -c /Users/sbrenton/Documents/Study/cub_school/params.c
+CMakeFiles/cum3d.dir/parser_params.c.o: CMakeFiles/cum3d.dir/flags.make
+CMakeFiles/cum3d.dir/parser_params.c.o: ../parser_params.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cum3d.dir/parser_params.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cum3d.dir/parser_params.c.o   -c /Users/sbrenton/Documents/Study/cub_school/parser_params.c
 
-CMakeFiles/cum3d.dir/params.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cum3d.dir/params.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sbrenton/Documents/Study/cub_school/params.c > CMakeFiles/cum3d.dir/params.c.i
+CMakeFiles/cum3d.dir/parser_params.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cum3d.dir/parser_params.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sbrenton/Documents/Study/cub_school/parser_params.c > CMakeFiles/cum3d.dir/parser_params.c.i
 
-CMakeFiles/cum3d.dir/params.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cum3d.dir/params.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sbrenton/Documents/Study/cub_school/params.c -o CMakeFiles/cum3d.dir/params.c.s
+CMakeFiles/cum3d.dir/parser_params.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cum3d.dir/parser_params.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sbrenton/Documents/Study/cub_school/parser_params.c -o CMakeFiles/cum3d.dir/parser_params.c.s
 
-CMakeFiles/cum3d.dir/map.c.o: CMakeFiles/cum3d.dir/flags.make
-CMakeFiles/cum3d.dir/map.c.o: ../map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/cum3d.dir/map.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cum3d.dir/map.c.o   -c /Users/sbrenton/Documents/Study/cub_school/map.c
+CMakeFiles/cum3d.dir/parser_map.c.o: CMakeFiles/cum3d.dir/flags.make
+CMakeFiles/cum3d.dir/parser_map.c.o: ../parser_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/cum3d.dir/parser_map.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cum3d.dir/parser_map.c.o   -c /Users/sbrenton/Documents/Study/cub_school/parser_map.c
 
-CMakeFiles/cum3d.dir/map.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cum3d.dir/map.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sbrenton/Documents/Study/cub_school/map.c > CMakeFiles/cum3d.dir/map.c.i
+CMakeFiles/cum3d.dir/parser_map.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cum3d.dir/parser_map.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sbrenton/Documents/Study/cub_school/parser_map.c > CMakeFiles/cum3d.dir/parser_map.c.i
 
-CMakeFiles/cum3d.dir/map.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cum3d.dir/map.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sbrenton/Documents/Study/cub_school/map.c -o CMakeFiles/cum3d.dir/map.c.s
+CMakeFiles/cum3d.dir/parser_map.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cum3d.dir/parser_map.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sbrenton/Documents/Study/cub_school/parser_map.c -o CMakeFiles/cum3d.dir/parser_map.c.s
+
+CMakeFiles/cum3d.dir/functions.c.o: CMakeFiles/cum3d.dir/flags.make
+CMakeFiles/cum3d.dir/functions.c.o: ../functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cum3d.dir/functions.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cum3d.dir/functions.c.o   -c /Users/sbrenton/Documents/Study/cub_school/functions.c
+
+CMakeFiles/cum3d.dir/functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cum3d.dir/functions.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sbrenton/Documents/Study/cub_school/functions.c > CMakeFiles/cum3d.dir/functions.c.i
+
+CMakeFiles/cum3d.dir/functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cum3d.dir/functions.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sbrenton/Documents/Study/cub_school/functions.c -o CMakeFiles/cum3d.dir/functions.c.s
 
 CMakeFiles/cum3d.dir/ray.c.o: CMakeFiles/cum3d.dir/flags.make
 CMakeFiles/cum3d.dir/ray.c.o: ../ray.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cum3d.dir/ray.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/cum3d.dir/ray.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cum3d.dir/ray.c.o   -c /Users/sbrenton/Documents/Study/cub_school/ray.c
 
 CMakeFiles/cum3d.dir/ray.c.i: cmake_force
@@ -131,7 +144,7 @@ CMakeFiles/cum3d.dir/ray.c.s: cmake_force
 
 CMakeFiles/cum3d.dir/libft/ft_lstsize.c.o: CMakeFiles/cum3d.dir/flags.make
 CMakeFiles/cum3d.dir/libft/ft_lstsize.c.o: ../libft/ft_lstsize.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/cum3d.dir/libft/ft_lstsize.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/cum3d.dir/libft/ft_lstsize.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cum3d.dir/libft/ft_lstsize.c.o   -c /Users/sbrenton/Documents/Study/cub_school/libft/ft_lstsize.c
 
 CMakeFiles/cum3d.dir/libft/ft_lstsize.c.i: cmake_force
@@ -144,7 +157,7 @@ CMakeFiles/cum3d.dir/libft/ft_lstsize.c.s: cmake_force
 
 CMakeFiles/cum3d.dir/libft/ft_strtrim.c.o: CMakeFiles/cum3d.dir/flags.make
 CMakeFiles/cum3d.dir/libft/ft_strtrim.c.o: ../libft/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/cum3d.dir/libft/ft_strtrim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/cum3d.dir/libft/ft_strtrim.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cum3d.dir/libft/ft_strtrim.c.o   -c /Users/sbrenton/Documents/Study/cub_school/libft/ft_strtrim.c
 
 CMakeFiles/cum3d.dir/libft/ft_strtrim.c.i: cmake_force
@@ -157,7 +170,7 @@ CMakeFiles/cum3d.dir/libft/ft_strtrim.c.s: cmake_force
 
 CMakeFiles/cum3d.dir/libft/ft_strdup.c.o: CMakeFiles/cum3d.dir/flags.make
 CMakeFiles/cum3d.dir/libft/ft_strdup.c.o: ../libft/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/cum3d.dir/libft/ft_strdup.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/cum3d.dir/libft/ft_strdup.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cum3d.dir/libft/ft_strdup.c.o   -c /Users/sbrenton/Documents/Study/cub_school/libft/ft_strdup.c
 
 CMakeFiles/cum3d.dir/libft/ft_strdup.c.i: cmake_force
@@ -170,7 +183,7 @@ CMakeFiles/cum3d.dir/libft/ft_strdup.c.s: cmake_force
 
 CMakeFiles/cum3d.dir/libft/ft_calloc.c.o: CMakeFiles/cum3d.dir/flags.make
 CMakeFiles/cum3d.dir/libft/ft_calloc.c.o: ../libft/ft_calloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/cum3d.dir/libft/ft_calloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/cum3d.dir/libft/ft_calloc.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cum3d.dir/libft/ft_calloc.c.o   -c /Users/sbrenton/Documents/Study/cub_school/libft/ft_calloc.c
 
 CMakeFiles/cum3d.dir/libft/ft_calloc.c.i: cmake_force
@@ -183,7 +196,7 @@ CMakeFiles/cum3d.dir/libft/ft_calloc.c.s: cmake_force
 
 CMakeFiles/cum3d.dir/libft/ft_bzero.c.o: CMakeFiles/cum3d.dir/flags.make
 CMakeFiles/cum3d.dir/libft/ft_bzero.c.o: ../libft/ft_bzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/cum3d.dir/libft/ft_bzero.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/cum3d.dir/libft/ft_bzero.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cum3d.dir/libft/ft_bzero.c.o   -c /Users/sbrenton/Documents/Study/cub_school/libft/ft_bzero.c
 
 CMakeFiles/cum3d.dir/libft/ft_bzero.c.i: cmake_force
@@ -196,7 +209,7 @@ CMakeFiles/cum3d.dir/libft/ft_bzero.c.s: cmake_force
 
 CMakeFiles/cum3d.dir/libft/ft_atoi.c.o: CMakeFiles/cum3d.dir/flags.make
 CMakeFiles/cum3d.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/cum3d.dir/libft/ft_atoi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/cum3d.dir/libft/ft_atoi.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cum3d.dir/libft/ft_atoi.c.o   -c /Users/sbrenton/Documents/Study/cub_school/libft/ft_atoi.c
 
 CMakeFiles/cum3d.dir/libft/ft_atoi.c.i: cmake_force
@@ -209,7 +222,7 @@ CMakeFiles/cum3d.dir/libft/ft_atoi.c.s: cmake_force
 
 CMakeFiles/cum3d.dir/libft/get_next_line.c.o: CMakeFiles/cum3d.dir/flags.make
 CMakeFiles/cum3d.dir/libft/get_next_line.c.o: ../libft/get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/cum3d.dir/libft/get_next_line.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/cum3d.dir/libft/get_next_line.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cum3d.dir/libft/get_next_line.c.o   -c /Users/sbrenton/Documents/Study/cub_school/libft/get_next_line.c
 
 CMakeFiles/cum3d.dir/libft/get_next_line.c.i: cmake_force
@@ -222,7 +235,7 @@ CMakeFiles/cum3d.dir/libft/get_next_line.c.s: cmake_force
 
 CMakeFiles/cum3d.dir/libft/ft_itoa.c.o: CMakeFiles/cum3d.dir/flags.make
 CMakeFiles/cum3d.dir/libft/ft_itoa.c.o: ../libft/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/cum3d.dir/libft/ft_itoa.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/cum3d.dir/libft/ft_itoa.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cum3d.dir/libft/ft_itoa.c.o   -c /Users/sbrenton/Documents/Study/cub_school/libft/ft_itoa.c
 
 CMakeFiles/cum3d.dir/libft/ft_itoa.c.i: cmake_force
@@ -235,7 +248,7 @@ CMakeFiles/cum3d.dir/libft/ft_itoa.c.s: cmake_force
 
 CMakeFiles/cum3d.dir/libft/ft_lstadd_back.c.o: CMakeFiles/cum3d.dir/flags.make
 CMakeFiles/cum3d.dir/libft/ft_lstadd_back.c.o: ../libft/ft_lstadd_back.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/cum3d.dir/libft/ft_lstadd_back.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/cum3d.dir/libft/ft_lstadd_back.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cum3d.dir/libft/ft_lstadd_back.c.o   -c /Users/sbrenton/Documents/Study/cub_school/libft/ft_lstadd_back.c
 
 CMakeFiles/cum3d.dir/libft/ft_lstadd_back.c.i: cmake_force
@@ -248,7 +261,7 @@ CMakeFiles/cum3d.dir/libft/ft_lstadd_back.c.s: cmake_force
 
 CMakeFiles/cum3d.dir/libft/ft_lstnew.c.o: CMakeFiles/cum3d.dir/flags.make
 CMakeFiles/cum3d.dir/libft/ft_lstnew.c.o: ../libft/ft_lstnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/cum3d.dir/libft/ft_lstnew.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/cum3d.dir/libft/ft_lstnew.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cum3d.dir/libft/ft_lstnew.c.o   -c /Users/sbrenton/Documents/Study/cub_school/libft/ft_lstnew.c
 
 CMakeFiles/cum3d.dir/libft/ft_lstnew.c.i: cmake_force
@@ -261,7 +274,7 @@ CMakeFiles/cum3d.dir/libft/ft_lstnew.c.s: cmake_force
 
 CMakeFiles/cum3d.dir/libft/ft_strlen.c.o: CMakeFiles/cum3d.dir/flags.make
 CMakeFiles/cum3d.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/cum3d.dir/libft/ft_strlen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/cum3d.dir/libft/ft_strlen.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cum3d.dir/libft/ft_strlen.c.o   -c /Users/sbrenton/Documents/Study/cub_school/libft/ft_strlen.c
 
 CMakeFiles/cum3d.dir/libft/ft_strlen.c.i: cmake_force
@@ -275,8 +288,9 @@ CMakeFiles/cum3d.dir/libft/ft_strlen.c.s: cmake_force
 # Object files for target cum3d
 cum3d_OBJECTS = \
 "CMakeFiles/cum3d.dir/main.c.o" \
-"CMakeFiles/cum3d.dir/params.c.o" \
-"CMakeFiles/cum3d.dir/map.c.o" \
+"CMakeFiles/cum3d.dir/parser_params.c.o" \
+"CMakeFiles/cum3d.dir/parser_map.c.o" \
+"CMakeFiles/cum3d.dir/functions.c.o" \
 "CMakeFiles/cum3d.dir/ray.c.o" \
 "CMakeFiles/cum3d.dir/libft/ft_lstsize.c.o" \
 "CMakeFiles/cum3d.dir/libft/ft_strtrim.c.o" \
@@ -294,8 +308,9 @@ cum3d_OBJECTS = \
 cum3d_EXTERNAL_OBJECTS =
 
 cum3d: CMakeFiles/cum3d.dir/main.c.o
-cum3d: CMakeFiles/cum3d.dir/params.c.o
-cum3d: CMakeFiles/cum3d.dir/map.c.o
+cum3d: CMakeFiles/cum3d.dir/parser_params.c.o
+cum3d: CMakeFiles/cum3d.dir/parser_map.c.o
+cum3d: CMakeFiles/cum3d.dir/functions.c.o
 cum3d: CMakeFiles/cum3d.dir/ray.c.o
 cum3d: CMakeFiles/cum3d.dir/libft/ft_lstsize.c.o
 cum3d: CMakeFiles/cum3d.dir/libft/ft_strtrim.c.o
@@ -310,7 +325,7 @@ cum3d: CMakeFiles/cum3d.dir/libft/ft_lstnew.c.o
 cum3d: CMakeFiles/cum3d.dir/libft/ft_strlen.c.o
 cum3d: CMakeFiles/cum3d.dir/build.make
 cum3d: CMakeFiles/cum3d.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C executable cum3d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C executable cum3d"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cum3d.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/cum3d.dir/functions.c.o"
   "CMakeFiles/cum3d.dir/libft/ft_atoi.c.o"
   "CMakeFiles/cum3d.dir/libft/ft_bzero.c.o"
   "CMakeFiles/cum3d.dir/libft/ft_calloc.c.o"
@@ -11,8 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cum3d.dir/libft/ft_strtrim.c.o"
   "CMakeFiles/cum3d.dir/libft/get_next_line.c.o"
   "CMakeFiles/cum3d.dir/main.c.o"
-  "CMakeFiles/cum3d.dir/map.c.o"
-  "CMakeFiles/cum3d.dir/params.c.o"
+  "CMakeFiles/cum3d.dir/parser_map.c.o"
+  "CMakeFiles/cum3d.dir/parser_params.c.o"
   "CMakeFiles/cum3d.dir/ray.c.o"
   "cum3d"
   "cum3d.pdb"

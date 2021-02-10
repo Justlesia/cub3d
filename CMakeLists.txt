@@ -18,8 +18,9 @@ set(GCC_COVERAGE_COMPILE_FLAGS "-Wall -Wextra -Werror -L. lft")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -framework OpenGL -framework AppKit -L. -lmlx")
 #add_library(libmlx.dylib)
 add_executable(cum3d main.c
-        params.c
-        map.c
+        parser_params.c
+        parser_map.c
+        functions.c
         ray.c
         libft/ft_lstsize.c
         libft/ft_strtrim.c

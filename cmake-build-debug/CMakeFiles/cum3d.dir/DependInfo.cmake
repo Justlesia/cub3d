@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/sbrenton/Documents/Study/cub_school/functions.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/functions.c.o"
   "/Users/sbrenton/Documents/Study/cub_school/libft/ft_atoi.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_atoi.c.o"
   "/Users/sbrenton/Documents/Study/cub_school/libft/ft_bzero.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_bzero.c.o"
   "/Users/sbrenton/Documents/Study/cub_school/libft/ft_calloc.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_calloc.c.o"
@@ -16,8 +17,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/sbrenton/Documents/Study/cub_school/libft/ft_strtrim.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/libft/ft_strtrim.c.o"
   "/Users/sbrenton/Documents/Study/cub_school/libft/get_next_line.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/libft/get_next_line.c.o"
   "/Users/sbrenton/Documents/Study/cub_school/main.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/main.c.o"
-  "/Users/sbrenton/Documents/Study/cub_school/map.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/map.c.o"
-  "/Users/sbrenton/Documents/Study/cub_school/params.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/params.c.o"
+  "/Users/sbrenton/Documents/Study/cub_school/parser_map.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/parser_map.c.o"
+  "/Users/sbrenton/Documents/Study/cub_school/parser_params.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/parser_params.c.o"
   "/Users/sbrenton/Documents/Study/cub_school/ray.c" "/Users/sbrenton/Documents/Study/cub_school/cmake-build-debug/CMakeFiles/cum3d.dir/ray.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

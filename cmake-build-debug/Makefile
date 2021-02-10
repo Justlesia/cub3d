@@ -143,6 +143,33 @@ cum3d/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/build
 .PHONY : cum3d/fast
 
+functions.o: functions.c.o
+
+.PHONY : functions.o
+
+# target to build an object file
+functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/functions.c.o
+.PHONY : functions.c.o
+
+functions.i: functions.c.i
+
+.PHONY : functions.i
+
+# target to preprocess a source file
+functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/functions.c.i
+.PHONY : functions.c.i
+
+functions.s: functions.c.s
+
+.PHONY : functions.s
+
+# target to generate assembly for a file
+functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/functions.c.s
+.PHONY : functions.c.s
+
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
 .PHONY : libft/ft_atoi.o
@@ -467,59 +494,59 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/main.c.s
 .PHONY : main.c.s
 
-map.o: map.c.o
+parser_map.o: parser_map.c.o
 
-.PHONY : map.o
-
-# target to build an object file
-map.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/map.c.o
-.PHONY : map.c.o
-
-map.i: map.c.i
-
-.PHONY : map.i
-
-# target to preprocess a source file
-map.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/map.c.i
-.PHONY : map.c.i
-
-map.s: map.c.s
-
-.PHONY : map.s
-
-# target to generate assembly for a file
-map.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/map.c.s
-.PHONY : map.c.s
-
-params.o: params.c.o
-
-.PHONY : params.o
+.PHONY : parser_map.o
 
 # target to build an object file
-params.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/params.c.o
-.PHONY : params.c.o
+parser_map.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/parser_map.c.o
+.PHONY : parser_map.c.o
 
-params.i: params.c.i
+parser_map.i: parser_map.c.i
 
-.PHONY : params.i
+.PHONY : parser_map.i
 
 # target to preprocess a source file
-params.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/params.c.i
-.PHONY : params.c.i
+parser_map.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/parser_map.c.i
+.PHONY : parser_map.c.i
 
-params.s: params.c.s
+parser_map.s: parser_map.c.s
 
-.PHONY : params.s
+.PHONY : parser_map.s
 
 # target to generate assembly for a file
-params.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/params.c.s
-.PHONY : params.c.s
+parser_map.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/parser_map.c.s
+.PHONY : parser_map.c.s
+
+parser_params.o: parser_params.c.o
+
+.PHONY : parser_params.o
+
+# target to build an object file
+parser_params.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/parser_params.c.o
+.PHONY : parser_params.c.o
+
+parser_params.i: parser_params.c.i
+
+.PHONY : parser_params.i
+
+# target to preprocess a source file
+parser_params.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/parser_params.c.i
+.PHONY : parser_params.c.i
+
+parser_params.s: parser_params.c.s
+
+.PHONY : parser_params.s
+
+# target to generate assembly for a file
+parser_params.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cum3d.dir/build.make CMakeFiles/cum3d.dir/parser_params.c.s
+.PHONY : parser_params.c.s
 
 ray.o: ray.c.o
 
@@ -557,6 +584,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cum3d"
+	@echo "... functions.o"
+	@echo "... functions.i"
+	@echo "... functions.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -593,12 +623,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... map.o"
-	@echo "... map.i"
-	@echo "... map.s"
-	@echo "... params.o"
-	@echo "... params.i"
-	@echo "... params.s"
+	@echo "... parser_map.o"
+	@echo "... parser_map.i"
+	@echo "... parser_map.s"
+	@echo "... parser_params.o"
+	@echo "... parser_params.i"
+	@echo "... parser_params.s"
 	@echo "... ray.o"
 	@echo "... ray.i"
 	@echo "... ray.s"

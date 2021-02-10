@@ -6,7 +6,7 @@
 /*   By: sbrenton <sbrenton@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/20 15:23:48 by sbrenton          #+#    #+#             */
-/*   Updated: 2021/02/05 19:34:08 by sbrenton         ###   ########.fr       */
+/*   Updated: 2021/02/10 16:24:06 by sbrenton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,39 +17,6 @@
 #	include <fcntl.h>
 # 	include "mlx_mms/mlx.h"
 #include <math.h>
-
-t_cam_params ft_camera_params(char position, t_cam_params p_cam)
-{
-	if (position == 'N')
-	{
-		p_cam.dirX = 0;
-		p_cam.dirY = -1;
-		p_cam.planeX = 0.66;
-		p_cam.planeY = 0;
-	}
-	if (position == 'E')
-	{
-		p_cam.dirX = 1;
-		p_cam.dirY = 0;
-		p_cam.planeX = 0;
-		p_cam.planeY = 0.66;
-	}
-	if (position == 'S')
-	{
-		p_cam.dirX = 0;
-		p_cam.dirY = 1;
-		p_cam.planeX = -0.66;
-		p_cam.planeY = 0;
-	}
-	else
-	{
-		p_cam.dirX = -1;
-		p_cam.dirY = 0;
-		p_cam.planeX = 0;
-		p_cam.planeY = -0.66;
-	}
-	return p_cam;
-}
 
 
 int ft_basic_frame(t_params *prm)
